@@ -2,62 +2,85 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
-<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 <body>
-<h1 class="text-center"> Javascript Calculator</h1>
-<div class="row">
+  <h1>JavaScript Calculator</h1>
+  <div class="container">
+    <div class="row">
         <div class="">
-          <div class="card" id="card">
+          <div class="card ">
             <div class="card-content white-text">
-                         <div class="text-center">            
+              <h5>Calculator</h5>
+              <form name="calc">
+                      <input type="text"name="display" autocomplete="off"/ >
+  
+<table>
+  <tr>
+    <td><a class="waves-effect waves-light btn red" value="" OnClick="calc.display.value=''">AC</a>
+</td>
+    <!-- <td><a class="waves-effect waves-light btn red">CE</a>
+    </td> -->
+ <td><a class="waves-effect waves-light btn green" value="=" OnClick="calc.display.value=eval(calc.display.value)">=</a>
+</td>   
+    
+  </tr>
+  <tr>
+    <td><a class="waves-effect waves-light btn " value="1" OnClick="calc.display.value+='1'">1</a>
+</td>
+    <td><a class="waves-effect waves-light btn" value="2" OnClick="calc.display.value+='2'">2</a>
+</td>
+    <td><a class="waves-effect waves-light btn " value="3" OnClick="calc.display.value+='3'">3</a>
+</td>
+    <td><a class="waves-effect waves-light btn" value="4" OnClick="calc.display.value+='4'">4</a>
+</td>
 
-              <div class="row"><button class="btn-flat white" type="submit" name="action" style="width:auto;">Answer
- 
-  </button><br>
-                   <button class="btn waves-effect red waves-light" type="submit" name="action" id="btn"style="margin-top:10px; width:113px">AC
-  </button>
-                   <button class="btn waves-effect red waves-light" type="submit" name="action" id="btn"style="margin-top:10px; width:113px">CE
-  </button>
-                
-                <br>
-                <button class="btn waves-effect waves-light" type="submit" name="action" id="btn"style="margin-top:10px;">1
-  </button>
-<button class="btn waves-effect waves-light" type="submit" name="action" id="btn" style="margin-top:10px;">2
-  </button>
-  <button class="btn waves-effect waves-light" type="submit" name="action" id="btn" style="margin-top:10px;">3
-  </button>
-  <button class="btn waves-effect waves-light" type="submit" name="action" id="btn" style="margin-top:10px;">4
-  </button><br>
-<button class="btn waves-effect waves-light" type="submit" name="action" id="btn" style="margin-top:10px;">5
-  </button>
-                <button class="btn waves-effect waves-light" type="submit" name="action" id="btn" style="margin-top:10px;">6
-  </button>
-  <button class="btn waves-effect waves-light" type="submit" name="action" id="btn" style="margin-top:10px;">7
-  </button>
-  <button class="btn waves-effect waves-light" type="submit" name="action" id="btn"  style="margin-top:10px;">8
-  </button><br>
-                <button class="btn waves-effect waves-light" type="submit" name="action" id="btn" style="margin-top:10px;">9
-  </button>
-  <button class="btn waves-effect waves-light" type="submit" name="action" id="btn" style="margin-top:10px;">0
-</button>
-    <button class="btn waves-effect waves-light" type="submit" name="action" id="btn" style="margin-top:10px;">+
-    </button>
-      <button class="btn waves-effect waves-light" type="submit" name="action" id="btn" style="margin-top:10px;">-
-  </button><br>
-                <button class="btn waves-effect waves-light" type="submit" name="action" id="btn" style="margin-top:10px;">*
-  </button>
-  <button class="btn waves-effect waves-light" type="submit" name="action" id="btn" style="margin-top:10px;">/
-    </button>
-    <button class="btn waves-effect waves-light" type="submit" name="action" id="btn" style="margin-top:10px;">.
-    </button>
-      <button class="btn waves-effect waves-light" type="submit" name="action" id="btn" style="margin-top:10px;">%
-                           </button><br>
-                <button class="btn waves-effect green waves-light" type="submit" name="action" id="btn" style="margin-top:10px; width:100px;">=
-                           </button></div>
+  </tr>
+    <tr>
+    <td><a class="waves-effect waves-light btn"value="5" OnClick="calc.display.value+='5'">5</a>
+</td>
+    <td><a class="waves-effect waves-light btn" value="6" OnClick="calc.display.value+='6'">6</a>
+</td>
+    <td><a class="waves-effect waves-light btn" value="7" OnClick="calc.display.value+='7'">7</a>
+</td>
+      <td><a class="waves-effect waves-light btn" value="8" OnClick="calc.display.value+='8'">8</a>
+</td>
+
+  </tr>
+    <tr>
+    <td><a class="waves-effect waves-light btn" value="9" OnClick="calc.display.value+='9'">9</a>
+</td>
+    <td><a class="waves-effect waves-light btn" value="0" OnClick="calc.display.value+='0'">0</a>
+</td>
+    <td><a class="waves-effect waves-light btn" value="+" OnClick="calc.display.value+='+'">+</a>
+</td>
+    <td><a class="waves-effect waves-light btn" value="-" OnClick="calc.display.value+='-'">-</a>
+</td>
+<tr>
+    <td><a class="waves-effect waves-light btn" value="*" OnClick="calc.display.value+='*'">*</a>
+</td>
+    <td><a class="waves-effect waves-light btn" value="/" OnClick="calc.display.value+='/'">/</a>
+</td>
+    <td><a class="waves-effect waves-light btn" value="." OnClick="calc.display.value+='.'">.</a>
+</td>
+      <td><a class="waves-effect waves-light btn" value="/100" OnClick="calc.display.value+='%'">%</a>
+</td>
+
+  </tr>
+      
+
+      
+
+  </tr>
+</table>
+
+             
             </div>
+              </form>
           </div>
         </div>
-      </div>
-  </body>
+    </div>
+  </div>
+</body>
 
 
